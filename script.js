@@ -31,12 +31,8 @@ Particle.prototype.draw = function () {
 };
 
 Particle.prototype.update = function () {
-  if (this.x + this.size > canvas.width || this.x - this.size < 0) {
-    this.dx = -this.dx;
-  }
-  if (this.y + this.size > canvas.height || this.y - this.size < 0) {
-    this.dy = -this.dy;
-  }
+  if (this.x + this.size > canvas.width || this.x - this.size < 0) this.dx = -this.dx;
+  if (this.y + this.size > canvas.height || this.y - this.size < 0) this.dy = -this.dy;
   this.x += this.dx;
   this.y += this.dy;
   this.draw();
