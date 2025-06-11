@@ -6,8 +6,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background: #0d0d0d;
-  color: #00ccff;
+  background: linear-gradient(to bottom right, #0d0d0d, #1a1a1a);
+  color: #e0e0e0;
   text-align: center;
   overflow: hidden;
 }
@@ -34,46 +34,37 @@ canvas#particles {
 
 .main-title {
   font-size: 3em;
-  margin-bottom: 1.5rem;
-  color: #00ccff;
-  text-shadow: 0 0 25px #00ccff, 0 0 50px #66e0ff;
+  margin-bottom: 1rem;
+  color: #cccccc;
+  text-shadow: 0 0 25px #444, 0 0 50px #666;
 }
 
 .discord-btn {
   display: inline-block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: 15px 30px;
   background: transparent;
-  border: 2px solid #00ccff;
+  border: 2px solid #999;
   border-radius: 30px;
-  color: #00ccff;
+  color: #ccc;
   font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
-  text-shadow: 0 0 12px #00ccff;
+  text-shadow: 0 0 12px #666;
   transition: 0.3s;
 }
 
 .discord-btn:hover {
-  background: #00ccff;
+  background: #999;
   color: #0d0d0d;
-  box-shadow: 0 0 40px #00ccff, 0 0 70px #00ccff;
-}
-
-@keyframes glowPulse {
-  0%, 100% {
-    text-shadow: 0 0 5px #33d6ff, 0 0 10px #33d6ff, 0 0 20px #00ccff, 0 0 30px #00ccff;
-  }
-  50% {
-    text-shadow: 0 0 15px #33d6ff, 0 0 30px #33d6ff, 0 0 45px #00ccff, 0 0 60px #00ccff;
-  }
+  box-shadow: 0 0 40px #bbb, 0 0 70px #aaa;
 }
 
 .note-text {
   font-size: 1em;
   font-weight: 600;
-  color: #33d6ff;
-  margin-bottom: 1rem;
+  color: #aaa;
+  margin-top: 1.5rem;
   animation: glowPulse 2s infinite;
 }
 
@@ -87,41 +78,50 @@ canvas#particles {
 
 .site-button {
   padding: 15px;
-  border: 2px solid #00ccff;
+  border: 2px solid #888;
   border-radius: 20px;
   text-decoration: none;
-  color: #00ccff;
+  color: #ddd;
   background: transparent;
   font-size: 1.2em;
   font-weight: bold;
-  text-shadow: 0 0 10px #00ccff;
+  text-shadow: 0 0 10px #555;
   transition: 0.3s;
-  box-shadow: 0 0 12px #00ccff;
+  box-shadow: 0 0 12px #222;
 }
 
 .site-button:hover {
-  background: #00ccff;
+  background: #aaa;
   color: #0d0d0d;
-  box-shadow: 0 0 40px #00ccff, 0 0 60px #00ccff;
+  box-shadow: 0 0 40px #999, 0 0 60px #888;
 }
 
 .button-info {
   margin-top: 8px;
   font-size: 1em;
-  color: #66e0ff;
-  text-shadow: 0 0 6px #00ccff;
+  color: #ccc;
+  text-shadow: 0 0 6px #777;
 }
 
 .warning-text {
   margin-top: 1.5rem;
   font-size: 1em;
   font-weight: bold;
-  color: #00ccff;
-  text-shadow: 0 0 12px #00ccff, 0 0 18px #66e0ff;
+  color: #aaa;
+  text-shadow: 0 0 12px #555, 0 0 18px #666;
 }
 
 .blue-fire {
-  color: #00ccff;
+  color: #ccc;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 5px #444, 0 0 10px #444, 0 0 20px #666;
+  }
+  50% {
+    text-shadow: 0 0 15px #666, 0 0 30px #777, 0 0 45px #999;
+  }
 }
 
 @media screen and (max-height: 700px) {
